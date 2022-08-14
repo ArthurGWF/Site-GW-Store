@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GW Store</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="wrapper">
+        <a class="one" href="index.html"><img src="icon.png" width="150px"></src></a>
+        <div class="two"><a href="index.html">Home</a></div>
+        <div class="drop">
+            <a class="prod" href="produtos.html">Produtos</a>
+            <div class="drop2">
+                <a class="box" href="produtos2.html">Acessorios</a>
+            </div>
+        </div>
+        <div class="four"><a href="contato.html">Contato</a></div>
+        <div class="five"><a href="quemsomo.html">Quem somos?</a></div>
+        <div class="six"><a>Login</a></div>
+    </div>
+    <div>
+        <h1 id="titulo">Cadastro GW'Store</h1>
+        <p id="subtitulo">Complete suas informações</p>
+        <br>
+    </div>
+
+    <!-- Início do formulário -->
+    <form>
+
+        <fieldset class="grupo">
+            <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset> 
+
+        <!-- Campo de email com-->
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+        <div class="campo">
+            <label><strong>Sexo</strong></label>
+            <label>
+                <input type="radio" name="devweb" value="frontend" checked>Masculino
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="backend">Femenino
+            </label>
+        </div>
+
+
+        <fieldset class="grupo">
+            <!-- Campo de tecnologias para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+            <div id="check">
+                <label><strong>Avaliação da GW'Store</strong></label><br><br>
+                <input type="checkbox" id="mb" name="tecnologia1" value="mb">
+                <label for="mb"> Muito boa</label>
+                <input type="checkbox" id="b" name="tecnologia2" value="b">
+                <label for="b"> Boa</label>
+                <input type="checkbox" id="m" name="tecnologia3" value="m">
+                <label for="m"> Média</label>
+                <input type="checkbox" id="r" name="tecnologia4" value="r">
+                <label for="r"> Ruim</label>
+                <input type="checkbox" id="p" name="tecnologia5" value="p">
+                <label for="p"> Péssima</label>
+                <input type="checkbox" id="pno" name="tecnologia6" value="pno">
+                <label for="pno"> Prefiro não opinar</label>
+                
+            </div>
+        </fieldset>
+
+        <!-- Caixa de texto -->
+        <div class="campo">
+            <br>
+            <label for="experiencia"><strong>Conte um pouco mais da sua experiência: </strong></label>
+            <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+        </div>
+
+        <!-- Botão para enviar o formulário -->
+        <button class="botao" type="submit" onsubmit="">Concluído</button>            
+
+    </form>
+
+</body>
+
+</html>

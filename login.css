@@ -1,0 +1,224 @@
+body{
+    background-color: #CFD2CF;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: black;
+    margin-left: 36%;
+    
+}
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 2fr);
+    gap: 1px;
+    grid-auto-rows: minmax(50px, 10px);
+    font-size: 1.2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0%; 
+    background-color: black;
+    text-decoration: none;
+    margin-left: -36em ;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  .one{
+    display: flex;
+    text-align: left;
+    align-self: center;
+    grid-column: 1 ;
+    grid-row: 1;
+    margin-top: 10px;
+    font-weight: bold;
+    color: blue;
+  }
+  
+  
+  .two {
+    text-align: left;
+    align-self: center;
+    grid-column: 2 ;
+    grid-row: 1 ;
+    font-weight: bold
+  }
+  .three {
+    text-align: left;
+    align-self: center;
+    grid-column: 3;
+    grid-row: 1 ;
+    font-weight: bold
+  }
+  .four {
+    text-align: left;
+    align-self: center;
+    grid-column: 4;
+    grid-row: 1;
+    font-weight: bold
+  }
+  .five {
+    text-align: left;
+    align-self: center;
+    grid-column: 5;
+    grid-row: 1;
+    font-weight: bold;
+  }
+  .six {
+    text-align: center;
+    align-self: center;
+    grid-column: 6;
+    grid-row: 1;
+    font-weight: bold;
+  }
+
+  .drop2{ 
+    color: black;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px ;
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .drop{
+  text-align: left;
+    align-self: center;
+    grid-column: 3;
+    grid-row: 1 ;
+    font-weight: bold;
+    
+  position: relative;
+  display: inline-block;
+  color:black
+  }
+  
+  .drop:hover .drop2 {
+  display: block;
+  color: black;
+  }
+  
+  .prod{
+  color:white;
+  font-weight: bold;
+  }
+
+  .box{
+    color: black;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Elementos com o ID "titulo" */
+    #titulo {
+        font-family: sans-serif;
+        color: black;
+        margin-left: 7%;
+    } 
+    
+    /* Elementos com o ID "subtitulo" */
+    #subtitulo {
+        font-family: sans-serif;
+        color: black;
+        margin-left: 10%;
+    } 
+    
+    #check{
+        display: inline-block;
+    }
+    
+    /* Elementos de tag <fieldset>*/
+    fieldset {
+        border: 0;
+    }
+    
+    
+    
+    /* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
+    input, select, textarea, button {
+        font-family: sans-serif;
+        font-size: 1em;
+        color: black;
+        border-radius: 5px;
+    }
+    
+    /* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after" */
+    .grupo:before, .grupo:after {
+        display: table;
+    }
+    
+    /* Elementos de classe "grupo" no estado da pseudoclasse "after" */
+    .grupo:after {
+        clear: both;
+    }
+    
+    /* Elementos de classe "campo" */
+    .campo {
+        margin-bottom: 1em;
+    }
+    
+    /* Elementos de classe "campo" de tag <label> */
+    .campo label {
+        margin-bottom: 0.2em;
+        color: black;
+        display: block;
+    }
+    
+    /* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
+    fieldset.grupo .campo {
+        float:  left;
+        margin-right: 1em;
+    }
+    
+    /* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
+    .campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+        padding: 0.2em;
+        border: 1px solid black;
+        box-shadow: 2px 2px 2px ;
+        display: block;
+    }
+    
+    /* Elementos de classe "campo" de tag <select> e <option>*/
+    .campo select option {
+        padding-right: 1em;
+    }
+    
+    /* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
+    .campo input:focus, .campo select:focus, .campo textarea:focus {
+        background: white;
+    }
+    
+    /* Elemento de classe "botao" */
+    .botao {
+        font-size: 1.2em;
+        background: black;
+        border: 0;
+        margin-bottom: 1em;
+        color: #ffffff;
+        padding: 0.2em 0.6em;
+        box-shadow: 2px 2px 2px ;
+        text-shadow: 1px 1px 1px ;
+        position: absolute;
+        top: 60%;
+        left: 47%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
+    .botao:hover {
+        background: black;
+        box-shadow: inset 2px 2px 2px ;
+        text-shadow: none;
+    }
+    
+    /* Elementos de classe botão e de tag <select> */
+    .botao, select{
+        cursor: pointer;
+    }
